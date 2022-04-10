@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="loginImageView" fitHeight="400.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/login.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="30.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Game Store">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="85.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projekt PO" wrappingWidth="70.2392578125">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wiktor Tekiela" />
+            <Text layoutX="69.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wiktoria Martyńska" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #d2d4d6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="lockImageView" fitHeight="32.0" fitWidth="46.0" layoutX="119.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/login_icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="130.0" text="Login:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="70.0" layoutY="127.0" prefHeight="26.0" prefWidth="173.0" promptText="Login" />
+            <Label layoutX="24.0" layoutY="178.0" text="Hasło:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" layoutX="70.0" layoutY="175.0" prefHeight="26.0" prefWidth="173.0" promptText="Hasło" />
+            <Button fx:id="loginButton" layoutX="24.0" layoutY="254.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="232.0" style="-fx-background-color: #556965;" text="Zaloguj" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="24.0" layoutY="304.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="232.0" style="-fx-background-color: #556965;" text="Anuluj" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="24.0" layoutY="216.0" prefHeight="19.0" prefWidth="232.0" textFill="#bf2727">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Text layoutX="84.0" layoutY="371.0" onMouseClicked="#createAccountForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Utwórz nowe konto..." />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
