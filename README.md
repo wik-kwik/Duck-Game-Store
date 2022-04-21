@@ -1,20 +1,7 @@
-# Keyboard Rush
+# Duck Game Store
+Simple game store and library app.
 
+## Prezentacja wideo
 
-## Zadanie 1
-
-Stwórz „przycisk” obsługujący ikonę zamknięcia aplikacji.
-
-Wskazówka: Pamiętaj o przypisaniu do niego funkcji exit() oraz dołączeniu go do odpowiedniej listy.
-## Zadanie 2
-
-Dla poziomu Easy, zamiast korzystać z dodanych plików, skorzystaj z listy słów z podanej strony. Listę wczytaj do **easyWords**.
-
-Weź pod uwagę poziom trudności – słowa powinny być krótkie (od 3 do 7 znaków).
-
-**Źródło:** https://www.mit.edu/~ecprice/wordlist.10000
-
-    
-Wskazówka: Skorzystaj z biblioteki requests (get, .text)
-
+https://user-images.githubusercontent.com/67471556/164515293-418e1538-e635-4f89-9f83-f352849323ee.mp4
 
